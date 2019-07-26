@@ -1,5 +1,6 @@
 var cas = require('../assets/cas').data;
 var provs = require('../assets/provs').data;
+const readline = require('readline');
 
 const preGameChecks = () => {
     console.log("Basic integrity test\n************************")
@@ -30,9 +31,11 @@ const preGameChecks = () => {
 }
 
 const newGame = () => {
-    let currentCas = cas;
-    let currentProvs = provs;
+    currentCas = cas;
+    currentProvs = provs;
+}
 
+const newTurn = () => {
     let nextTurn = Math.floor((Math.random() * 100) % currentCas.length);    
     console.log("It's " + currentCas[nextTurn].name + " turn");
     console.log("Current provinces: " + currentCas[nextTurn].currentProvinces);    
@@ -44,11 +47,88 @@ const newGame = () => {
         attackers.push({prov:x, borders: x.borders.filter(y => { return currentCas[nextTurn].currentProvinces.indexOf(y) < 0})})
     })
     let nextAttack = Math.floor((Math.random() * 100) % attackers.length);
-    let attack = {attacker: attackers[nextAttack].prov, victim: attackers[nextAttack].borders[(Math.floor((Math.random() * 100) % attackers[nextAttack].borders.length))]};
-    console.log(attackers[nextAttack].prov);
-    console.log(attack);
-    console.log(attack.attacker.id + " will attack " + attack.victim);
-    
+    let attack = {attacker: attackers[nextAttack].prov, victim: attackers[nextAttack].borders[(Math.floor((Math.random() * 100) % attackers[nextAttack].borders.length))]};    
+    console.log(attack.attacker.id + " attacks " + attack.victim);
+    if (Math.random() * 10 > 5){ // Win
+        winTurn(attack.attacker.id, attack.victim)
+    }else{ // Counter
+        console.log(attack.attacker.id + " failed miserably, counter!")
+        if (Math.random() * 10 > 5){ // Win counter
+            console.log(attack.victim + " won " +  attack.attacker.id);
+            winTurn( attack.victim, attack.attacker.id)
+        }else{
+            console.log("Nothing happened, let's see what is going on in the rest of the country...")            
+        }
+    }
+    turns++;
+    statusSummary();
+    console.log("Press ENTER for a new turn, Q to quit");
+}
+
+const winTurn = (winner, loser) => {
+    console.log("*****************")
+    console.log("* ROUND SUMMARY *")
+    console.log("*****************")    
+    updateCa(currentCas.filter(x => {return x.currentProvinces.indexOf(loser) >= 0})[0], currentProvs.filter(x => { return x.id == loser})[0], "lose");
+    updateCa(currentCas.filter(x => {return x.currentProvinces.indexOf(winner) >= 0})[0], currentProvs.filter(x => { return x.id == loser})[0], "win");    
+}
+
+const updateCa = (ca, prov, operation="win") =>{
+    console.log(ca.name + " " + operation + " " + prov.name);
+    let provIndex = currentProvs.indexOf(prov);
+    let caIndex = currentCas.indexOf(ca);
+
+    if (operation === "win"){
+        // Add province        
+        currentCas[caIndex].currentProvinces.push(prov.id);
+        // Update province metadata
+        currentProvs[provIndex].timesConquered++;
+        currentProvs[provIndex].caHistory.push(ca.id);                
+        console.log("Now " + ca.name + " contains " + currentCas[caIndex].currentProvinces);
+    }else{
+        // Remove province        
+        currentCas[caIndex].currentProvinces.splice(currentCas[caIndex].currentProvinces.indexOf(prov.id), 1);
+        console.log(currentCas[caIndex].currentProvinces)
+
+        // If no more provinces left --> CA extinguished
+        if (currentCas[caIndex].currentProvinces.length === 0){
+            currentCas.splice(caIndex, 1);
+            console.log(ca.name + " has been extinguished");
+        }        
+        // If lost province was the capital select a new one
+        else if (prov.id === ca.currentCapital){
+            currentCas[caIndex].currentCapital = currentCas[caIndex].currentProvinces[Math.floor((Math.random() * 100) % currentCas[caIndex].currentProvinces.length)];
+            currentProvs.filter(x => { return x.id == currentCas[caIndex].currentCapital})[0].wasCapital++;
+            console.log(ca.name +"'s capital fell. New capital is " + currentCas[caIndex].currentCapital);
+            console.log("Now " + ca.name + " contains " + currentCas[caIndex].currentProvinces);
+        }else{
+            console.log("Now " + ca.name + " contains " + currentCas[caIndex].currentProvinces);
+        }
+    }            
+}
+
+const statusSummary = () => {
+    console.log("*********************");
+    console.log("** PARTE DE GUERRA **")
+    console.log("*********************");
+    console.log("Turno:\t" + turns);
+    cas.forEach(ca => {
+        let currently = currentCas.filter(x => {return x.id == ca.id})[0]
+        console.log (ca.name + " started with " + ca.initialProvinces.length + " provinces, now it has " + (currently == undefined ? "0" : currently.currentProvinces.length))
+    })
 }
 //preGameChecks();
+let currentCas = cas;
+let currentProvs = provs;
+let turns = 0;
+
 newGame();
+newTurn();
+
+
+var stdin = process.openStdin();
+stdin.addListener("data", (key) => {
+    if ("Q" != key){
+        newTurn();
+    }
+});
