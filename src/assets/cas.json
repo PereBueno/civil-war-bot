@@ -201,10 +201,10 @@
             "id": "galicia",
             "name": "Galicia",
             "initialProvinces": [
-                "la-coruna", "lugo", "orense", "pontevedra"
+                "la-coruna", "lugo", "ourense", "pontevedra"
             ],
             "currentProvinces":[
-                "la-coruna", "lugo", "orense", "pontevedra"
+                "la-coruna", "lugo", "ourense", "pontevedra"
             ],
             "attacks": 0,
             "defenses": 0,
