@@ -1,0 +1,473 @@
+{
+    "meta": "Provincias",
+    "data":[        
+        {   
+            "id": "almeria",
+            "name": "Almería",
+            "initialCa": "andalucia",
+            "caHistory": ["andalucia"],
+            "timesConquered": 0,
+            "wasCapital": 0,
+            "borders": ["murcia", "granada", "melilla"]
+        },
+        {
+            "id": "cadiz",
+            "name": "Cádiz",
+            "initialCa": "andalucia",
+            "caHistory": ["andalucia"],
+            "timesConquered": 0,
+            "wasCapital": 0,
+            "borders": ["las-palmas", "ceuta", "malaga", "sevilla", "huelva"]
+        },
+        {
+            "id": "cordoba",
+            "name": "Córdoba",
+            "initialCa": "andalucia",
+            "caHistory": ["andalucia"],
+            "timesConquered": 0,
+            "wasCapital": 0,
+            "borders": ["badajoz", "ciudad-real", "jaen", "granada", "malaga", "sevilla"]
+        },
+        {
+            "id": "granada",
+            "name": "Granada",
+            "initialCa": "andalucia",
+            "caHistory": ["andalucia"],
+            "timesConquered": 0,
+            "wasCapital": 0,
+            "borders": ["albacete", "almeria", "melilla", "cordoba", "malaga", "jaen"]
+        },
+        {
+            "id": "huelva",
+            "name": "Huelva",
+            "initialCa": "andalucia",
+            "caHistory": ["andalucia"],
+            "timesConquered": 0,
+            "wasCapital": 0,
+            "borders": ["badajoz", "las-palmas", "cadiz", "sevilla"]
+        },
+        {
+            "id": "jaen",
+            "name": "Jaén",
+            "initialCa": "andalucia",
+            "caHistory": ["andalucia"],
+            "timesConquered": 0,
+            "wasCapital": 0,
+            "borders": ["albacete", "ciudad-real", "granada", "cordoba"]
+        },
+        {
+            "id": "malaga",
+            "name": "Málaga",
+            "initialCa": "andalucia",
+            "caHistory": ["andalucia"],
+            "timesConquered": 0,
+            "wasCapital": 0,
+            "borders": ["ceuta", "cadiz", "sevilla", "cordoba", "granada"]
+        },
+        {
+            "id": "sevilla",
+            "name": "Sevilla",
+            "initialCa": "andalucia",
+            "caHistory": ["andalucia"],
+            "timesConquered": 0,
+            "wasCapital": 1,
+            "borders": ["huelva", "badajoz", "cordoba", "malaga", "cadiz"]
+        },
+        {      
+            "id": "huesca",
+            "name": "Huesca",
+            "initialCa": "aragon",
+            "caHistory": ["aragon"],
+            "timesConquered": 0,
+            "wasCapital": 0,
+            "borders": ["navarra", "lleida", "zaragoza"]
+        },
+        {       
+            "id": "teruel",
+            "name": "Teruel",
+            "initialCa": "aragon",
+            "caHistory": ["aragon"],
+            "timesConquered": 0,
+            "wasCapital": 0,
+            "borders": ["castellon", "valencia", "cuenca", "guadalajara", "zaragoza", "tarragona"]
+        },
+        { 
+            "id": "zaragoza",
+            "name": "Zaragoza",
+            "initialCa": "aragon",
+            "caHistory": ["aragon"],
+            "timesConquered": 0,
+            "wasCapital": 1,
+            "borders": ["teruel", "guadalajara", "soria", "la-rioja", "navarra", "huesca", "lleida", "tarragona"]
+        },
+        {      
+            "id": "asturias",
+            "name": "Asturias",
+            "initialCa": "asturias",
+            "caHistory": ["asturias"],
+            "timesConquered": 0,
+            "wasCapital": 1,
+            "borders": ["lugo", "leon", "cantabria"]
+        },
+        {      
+            "id": "las-palmas",
+            "name": "Las Palmas",
+            "initialCa": "canarias",
+            "caHistory": ["canarias"],
+            "timesConquered": 0,
+            "wasCapital": 0,
+            "borders": ["cadiz", "huelva", "santa-cruz-de-tenerife"]
+        },
+        { 
+            "id": "santa-cruz-de-tenerife",
+            "name": "Santa Cruz de Tenerife",
+            "initialCa": "canarias",
+            "caHistory": ["canarias"],
+            "timesConquered": 0,
+            "wasCapital": 1,
+            "borders": ["las-palmas"]
+        },
+        {      
+            "id": "cantabria",
+            "name": "Cantabria",
+            "initialCa": "cantabria",
+            "caHistory": ["cantabria"],
+            "timesConquered": 0,
+            "wasCapital": 1,
+            "borders": ["bizkaia", "burgos", "leon", "palencia", "asturias"]
+        },
+        {      
+            "id": "albacete",
+            "name": "Albacete",
+            "initialCa": "castilla-la-mancha",
+            "caHistory": ["castilla-la-mancha"],
+            "timesConquered": 0,
+            "wasCapital": 0,
+            "borders": ["murcia", "granada", "jaen", "ciudad-real", "cuenca", "valencia", "alicante"]
+        },
+        {
+            "id": "ciudad-real",
+            "name": "Ciudad Real",
+            "initialCa": "castilla-la-mancha",
+            "caHistory": ["castilla-la-mancha"],
+            "timesConquered": 0,
+            "wasCapital": 0,
+            "borders": ["toledo", "cuenca", "jaen", "cordoba", "albacete", "badajoz"]
+        },
+        {
+            "id": "cuenca",
+            "name": "Cuenca",
+            "initialCa": "castilla-la-mancha",
+            "caHistory": ["castilla-la-mancha"],
+            "timesConquered": 0,
+            "wasCapital": 0,
+            "borders": ["madrid", "guadalajara", "teruel", "valencia", "albacete", "ciudad-real", "toledo"]
+        },
+        {
+            "id": "guadalajara",
+            "name": "Guadalajara",
+            "initialCa": "castilla-la-mancha",
+            "caHistory": ["castilla-la-mancha"],
+            "timesConquered": 0,
+            "wasCapital": 0,
+            "borders": ["madrid", "segovia", "soria", "zaragoza", "teruel", "cuenca"]
+        },
+        {
+            "id": "toledo",
+            "name": "Toledo",
+            "initialCa": "castilla-la-mancha",
+            "caHistory": ["castilla-la-mancha"],
+            "timesConquered": 0,
+            "wasCapital": 1,
+            "borders": ["madrid", "cuenca", "caceres", "avila", "ciudad-real"]
+        },
+        {      
+            "id": "avila",
+            "name": "Ávila",
+            "initialCa": "castilla-leon",
+            "caHistory": ["castilla-leon"],
+            "timesConquered": 0,
+            "wasCapital": 0,
+            "borders": ["madrid", "toledo", "caceres", "salamanca", "valladolid", "segovia"]
+        },
+        { 
+            "id": "burgos",
+            "name": "Burgos",
+            "initialCa": "castilla-leon",
+            "caHistory": ["castilla-leon"],
+            "timesConquered": 0,
+            "wasCapital": 0,
+            "borders": ["alava", "la-rioja", "soria", "segovia", "valladolid", "palencia", "cantabria"]
+        },
+        { 
+            "id": "leon",
+            "name": "León",
+            "initialCa": "castilla-leon",
+            "caHistory": ["castilla-leon"],
+            "timesConquered": 0,
+            "wasCapital": 0,
+            "borders": ["lugo", "ourense", "asturias", "cantabria", "palencia", "valladolid", "zamora"]
+        },
+        { 
+            "id": "palencia",
+            "name": "Palencia",
+            "initialCa": "castilla-leon",
+            "caHistory": ["castilla-leon"],
+            "timesConquered": 0,
+            "wasCapital": 0,
+            "borders": ["leon", "cantabria", "burgos", "valladolid"]
+        },
+        { 
+            "id": "salamanca",
+            "name": "Salamanca",
+            "initialCa": "castilla-leon",
+            "caHistory": ["castilla-leon"],
+            "timesConquered": 0,
+            "wasCapital": 0,
+            "borders": ["caceres", "avila", "valladolid", "zamora"]
+        },
+        { 
+            "id": "segovia",
+            "name": "Segovia",
+            "initialCa": "castilla-leon",
+            "caHistory": ["castilla-leon"],
+            "timesConquered": 0,
+            "wasCapital": 0,
+            "borders": ["valladolid", "burgos", "soria", "guadalajara", "madrid", "avila"]
+        },
+        { 
+            "id": "soria",
+            "name": "Soria",
+            "initialCa": "castilla-leon",
+            "caHistory": ["castilla-leon"],
+            "timesConquered": 0,
+            "wasCapital": 0,
+            "borders": ["burgos", "la-rioja", "zaragoza", "guadalajara", "segovia"]
+        },
+        { 
+            "id": "valladolid",
+            "name": "Valladolid",
+            "initialCa": "castilla-leon",
+            "caHistory": ["castilla-leon"],
+            "timesConquered": 0,
+            "wasCapital": 1,
+            "borders": ["leon", "palencia", "burgos", "segovia", "avila", "salamanca", "zamora"]
+        },
+        { 
+            "id": "zamora",
+            "name": "Zamora",
+            "initialCa": "castilla-leon",
+            "caHistory": ["castilla-leon"],
+            "timesConquered": 0,
+            "wasCapital": 0,
+            "borders": ["salamanca", "ourense", "leon", "valladolid"]
+        },
+        {      
+            "id": "barcelona",
+            "name": "Barcelona",
+            "initialCa": "catalunya",
+            "caHistory": ["catalunya"],
+            "timesConquered": 0,
+            "wasCapital": 1,
+            "borders": ["girona", "lleida", "tarragona"]
+        },
+        {
+            "id": "girona",
+            "name": "Girona",
+            "initialCa": "catalunya",
+            "caHistory": ["catalunya"],
+            "timesConquered": 0,
+            "wasCapital": 0,
+            "borders": ["lleida", "barcelona"]
+        },
+        {
+            "id": "lleida",
+            "name": "Lleida",
+            "initialCa": "catalunya",
+            "caHistory": ["catalunya"],
+            "timesConquered": 0,
+            "wasCapital": 0,
+            "borders": ["girona", "barcelona", "tarragona", "huesca", "zaragoza"]
+        },
+        {
+            "id": "tarragona",
+            "name": "Tarragona",
+            "initialCa": "catalunya",
+            "caHistory": ["catalunya"],
+            "timesConquered": 0,
+            "wasCapital": 1,
+            "borders": ["lleida", "barcelona", "islas-baleares", "castellon", "teruel", "zaragoza"]
+        },
+        {      
+            "id": "ceuta",
+            "name": "Ceuta",
+            "initialCa": "ceuta",
+            "caHistory": ["ceuta"],
+            "timesConquered": 0,
+            "wasCapital": 1,
+            "borders": ["cadiz", "malaga", "melilla"]
+        },
+        {      
+            "id": "madrid",
+            "name": "Madrid",
+            "initialCa": "comunidad-de-madrid",
+            "caHistory": ["comunidad-de-madrid"],
+            "timesConquered": 0,
+            "wasCapital": 1,
+            "borders": ["avila", "segovia", "guadalajara", "cuenca", "toledo"]
+        },
+        {       
+            "id": "alicante",
+            "name": "Alicante",
+            "initialCa": "comunitat-valenciana",
+            "caHistory": ["comunitat-valenciana"],
+            "timesConquered": 0,
+            "wasCapital": 0,
+            "borders": ["murcia", "albacete", "valencia", "islas-baleares"]
+        },
+        {
+            "id": "castellon",
+            "name": "Castellon",
+            "initialCa": "comunitat-valenciana",
+            "caHistory": ["comunitat-valenciana"],
+            "timesConquered": 0,
+            "wasCapital": 0,
+            "borders": ["teruel", "tarragona", "valencia", "islas-baleares"]
+        },
+        {
+            "id": "valencia",
+            "name": "Valencia",
+            "initialCa": "comunitat-valenciana",
+            "caHistory": ["comunitat-valenciana"],
+            "timesConquered": 0,
+            "wasCapital": 1,
+            "borders": ["alicante", "albacete", "cuenca", "teruel", "islas-baleares", "castellon"]
+        },
+        {       
+            "id": "badajoz",
+            "name": "Badajoz",
+            "initialCa": "extremadura",
+            "caHistory": ["extremadura"],
+            "timesConquered": 0,
+            "wasCapital": 1,
+            "borders": ["huelva", "sevilla", "cordoba", "ciudad-real", "caceres"]
+        },
+        {
+            "id": "caceres",
+            "name": "Cáceres",
+            "initialCa": "extremadura",
+            "caHistory": ["extremadura"],
+            "timesConquered": 0,
+            "wasCapital": 0,
+            "borders": ["salamanca", "avila", "toledo", "badajoz"]
+        },
+        {       
+            "id": "la-coruna",
+            "name": "A Coruña",
+            "initialCa": "galicia",
+            "caHistory": ["galicia"],
+            "timesConquered": 0,
+            "wasCapital": 1,
+            "borders": ["lugo", "pontevedra"]
+        },
+        {
+            "id": "lugo",
+            "name": "Lugo",
+            "initialCa": "galicia",
+            "caHistory": ["galicia"],
+            "timesConquered": 0,
+            "wasCapital": 0,
+            "borders": ["la-coruna", "pontevedra", "ourense", "asturias", "leon"]
+        },
+        {
+            "id": "ourense",
+            "name": "Ourense",
+            "initialCa": "galicia",
+            "caHistory": ["galicia"],
+            "timesConquered": 0,
+            "wasCapital": 0,
+            "borders": ["lugo", "pontevedra", "leon", "zamora"]
+        },
+        {
+            "id": "pontevedra",
+            "name": "Pontevedra",
+            "initialCa": "galicia",
+            "caHistory": ["galicia"],
+            "timesConquered": 0,
+            "wasCapital": 0,
+            "borders": ["lugo", "la-coruna", "ourense"]
+        },
+        {       
+            "id": "islas-baleares",
+            "name": "Islas Baleares",
+            "initialCa": "islas-baleares",
+            "caHistory": ["islas-baleares"],
+            "timesConquered": 0,
+            "wasCapital": 1,
+            "borders": ["castellon", "valencia", "alicante", "tarragona"]
+        },
+        {       
+            "id": "melilla",
+            "name": "Melilla",
+            "initialCa": "melilla",
+            "caHistory": ["melilla"],
+            "timesConquered": 0,
+            "wasCapital": 1,
+            "borders": ["ceuta", "granada", "almeria"]
+        },
+        {       
+            "id": "murcia",
+            "name": "Murcia",
+            "initialCa": "murcia",
+            "caHistory": ["murcia"],
+            "timesConquered": 0,
+            "wasCapital": 1,
+            "borders": ["alicante", "albacete", "almeria"]
+        },
+        {       
+            "id": "navarra",
+            "name": "Navarra",
+            "initialCa": "navarra",
+            "caHistory": ["navarra"],
+            "timesConquered": 0,
+            "wasCapital": 1,
+            "borders": ["alava", "gipuzkoa", "huesca", "zaragoza", "la-rioja"]
+        },
+        {       
+            "id": "alava",
+            "name": "Álava",
+            "initialCa": "pais-vasco",
+            "caHistory": ["pais-vasco"],
+            "timesConquered": 0,
+            "wasCapital": 0,
+            "borders": ["gipuzkoa", "navarra", "la-rioja", "burgos", "bizkaia"]
+        },
+        {
+            "id": "bizkaia",
+            "name": "Bizkaia",
+            "initialCa": "pais-vasco",
+            "caHistory": ["pais-vasco"],
+            "timesConquered": 0,
+            "wasCapital": 1,
+            "borders": ["alava", "gipuzkoa", "cantabria"]
+        },
+        {
+            "id": "gipuzkoa",
+            "name": "Guipuzkoa",
+            "initialCa": "pais-vasco",
+            "caHistory": ["pais-vasco"],
+            "timesConquered": 0,
+            "wasCapital": 1,
+            "borders": ["alava", "bizkaia", "navarra"]
+        },
+        {       
+            "id": "la-rioja",
+            "name": "La Rioja",
+            "initialCa": "la-rioja",
+            "caHistory": ["la-rioja"],
+            "timesConquered": 0,
+            "wasCapital": 1,
+            "borders": ["burgos", "alava", "navarra", "zaragoza", "soria"]
+        }
+    ]
+}

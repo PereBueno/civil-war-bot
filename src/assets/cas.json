@@ -1,0 +1,271 @@
+{
+    "meta": "Comunidades autónomas",
+    "data":[
+        {
+            "id": "andalucia",
+            "name": "Andalucía",
+            "initialProvinces": [
+                "huelva", "sevilla", "cadiz", "cordoba", "malaga", "jaen", "almeria", "granada"
+            ],
+            "currentProvinces":[
+                "huelva", "sevilla", "cadiz", "cordoba", "malaga", "jaen", "almeria", "granada"
+            ],
+            "attacks": 0,
+            "defenses": 0,
+            "capital": "sevilla",
+            "currentCapital": "sevilla"
+        },
+        {
+            "id": "murcia",
+            "name": "Murcia",
+            "initialProvinces": [
+                "murcia"
+            ],
+            "currentProvinces":[
+                "murcia"
+            ],
+            "attacks": 0,
+            "defenses": 0,
+            "capital": "murcia",
+            "currentCapital": "murcia"
+        },
+        {
+            "id": "extremadura",
+            "name": "Extremadura",
+            "initialProvinces": [
+                "caceres", "badajoz"
+            ],
+            "currentProvinces":[
+                "caceres", "badajoz"
+            ],
+            "attacks": 0,
+            "defenses": 0,
+            "capital": "badajoz",
+            "currentCapital": "badajoz"
+        },
+        {
+            "id": "castilla-la-mancha",
+            "name": "Castilla La Mancha",
+            "initialProvinces": [
+                "cuenca", "ciudad-real", "guadalajara", "toledo", "albacete"
+            ],
+            "currentProvinces":[
+                "cuenca", "ciudad-real", "guadalajara", "toledo", "albacete"
+            ],
+            "attacks": 0,
+            "defenses": 0,
+            "capital": "toledo",
+            "currentCapital": "toledo"
+        },
+        {
+            "id": "comunitat-valenciana",
+            "name": "Comunitat Valenciana",
+            "initialProvinces": [
+                "valencia", "castellon", "alicante"
+            ],
+            "currentProvinces":[
+                "valencia", "castellon", "alicante"
+            ],
+            "attacks": 0,
+            "defenses": 0,
+            "capital": "valencia",
+            "currentCapital": "valencia"
+        },
+        {
+            "id": "comunidad-de-madrid",
+            "name": "Comunidad de Madrid",
+            "initialProvinces": [
+                "madrid"
+            ],
+            "currentProvinces":[
+                "madrid"
+            ],
+            "attacks": 0,
+            "defenses": 0,
+            "capital": "madrid",
+            "currentCapital": "madrid"
+        },
+        {
+            "id": "catalunya",
+            "name": "Cataluña",
+            "initialProvinces": [
+                "barcelona", "tarragona", "girona", "lleida"
+            ],
+            "currentProvinces":[
+                "barcelona", "tarragona", "girona", "lleida"
+            ],
+            "attacks": 0,
+            "defenses": 0,
+            "capital": "barcelona",
+            "currentCapital": "barcelona"
+        },
+        {
+            "id": "aragon",
+            "name": "Aragón",
+            "initialProvinces": [
+                "teruel", "zaragoza", "huesca"
+            ],
+            "currentProvinces":[
+                "teruel", "zaragoza", "huesca"
+            ],
+            "attacks": 0,
+            "defenses": 0,
+            "capital": "zaragoza",
+            "currentCapital": "zaragoza"
+        },
+        {
+            "id": "la-rioja",
+            "name": "La Rioja",
+            "initialProvinces": [
+                "la-rioja"
+            ],
+            "currentProvinces":[
+                "la-rioja"
+            ],
+            "attacks": 0,
+            "defenses": 0,
+            "capital": "la-rioja",
+            "currentCapital": "la-rioja"
+        },
+        {
+            "id": "castilla-leon",
+            "name": "Castilla y León",
+            "initialProvinces": [
+                "leon", "palencia", "valladolid", "soria", "burgos", "avila", "segovia", "salamanca", "zamora"
+            ],
+            "currentProvinces":[
+                "leon", "palencia", "valladolid", "soria", "burgos", "avila", "segovia", "salamanca", "zamora"
+            ],
+            "attacks": 0,
+            "defenses": 0,
+            "capital": "valladolid",
+            "currentCapital": "valladolid"
+        },
+        {
+            "id": "navarra",
+            "name": "Comunidad de Navarra",
+            "initialProvinces": [
+                "navarra"
+            ],
+            "currentProvinces":[
+                "navarra"
+            ],
+            "attacks": 0,
+            "defenses": 0,
+            "capital": "navarra",
+            "currentCapital": "navarra"
+        },
+        {
+            "id": "pais-vasco",
+            "name": "País Vasco",
+            "initialProvinces": [
+                "alava", "bizkaia", "gipuzkoa"
+            ],
+            "currentProvinces":[
+                "alava", "bizkaia", "gipuzkoa"
+            ],
+            "attacks": 0,
+            "defenses": 0,
+            "capital": "bizkaia",
+            "currentCapital": "bizkaia"
+        },
+        {
+            "id": "cantabria",
+            "name": "Cantabria",
+            "initialProvinces": [
+                "cantabria"
+            ],
+            "currentProvinces":[
+                "cantabria"
+            ],
+            "attacks": 0,
+            "defenses": 0,
+            "capital": "cantabria",
+            "currentCapital": "cantabria"
+        },
+        {
+            "id": "asturias",
+            "name": "Principado de Asturias",
+            "initialProvinces": [
+                "asturias"
+            ],
+            "currentProvinces":[
+                "asturias"
+            ],
+            "attacks": 0,
+            "defenses": 0,
+            "capital": "asturias",
+            "currentCapital": "asturias"
+        },
+        {
+            "id": "galicia",
+            "name": "Galicia",
+            "initialProvinces": [
+                "la-coruna", "lugo", "orense", "pontevedra"
+            ],
+            "currentProvinces":[
+                "la-coruna", "lugo", "orense", "pontevedra"
+            ],
+            "attacks": 0,
+            "defenses": 0,
+            "capital": "la-coruna",
+            "currentCapital": "la-coruna"
+        },
+        {
+            "id": "canarias",
+            "name": "Canarias",
+            "initialProvinces": [
+                "las-palmas", "santa-cruz-de-tenerife"
+            ],
+            "currentProvinces":[
+                "las-palmas", "santa-cruz-de-tenerife"
+            ],
+            "attacks": 0,
+            "defenses": 0,
+            "capital": "santa-cruz-de-tenerife",
+            "currentCapital": "santa-cruz-de-tenerife"
+        },
+        {
+            "id": "ceuta",
+            "name": "Ceuta",
+            "initialProvinces": [
+                "ceuta"
+            ],
+            "currentProvinces":[
+                "ceuta"
+            ],
+            "attacks": 0,
+            "defenses": 0,
+            "capital": "ceuta",
+            "currentCapital": "ceuta"
+        },
+        {
+            "id": "melilla",
+            "name": "Melilla",
+            "initialProvinces": [
+                "melilla"
+            ],
+            "currentProvinces":[
+                "melilla"
+            ],
+            "attacks": 0,
+            "defenses": 0,
+            "capital": "melilla",
+            "currentCapital": "melilla"
+        },
+        {
+            "id": "islas-baleares",
+            "name": "Islas Baleares",
+            "initialProvinces": [
+                "islas-baleares"
+            ],
+            "currentProvinces":[
+                "islas-baleares"
+            ],
+            "attacks": 0,
+            "defenses": 0,
+            "capital": "islas-baleares",
+            "currentCapital": "islas-baleares"
+        }
+    ]
+}
